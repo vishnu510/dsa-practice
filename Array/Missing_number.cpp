@@ -21,4 +21,10 @@ int main() {
 	cout<<MissNo;
 	
 	return 0;
+
+
 }
+
+int missingNumber(vector<int>& nums) {
+        
+    }
