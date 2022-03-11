@@ -19,7 +19,7 @@ public:
    }
    void bfs(int source){
      queue<int> q;
-     bool visited = new visited[V]{0};
+     bool *visited = new bool[V]{0};
      q.push(source);
      visited[source] = true;
      while(!q.empty()){
