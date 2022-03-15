@@ -25,7 +25,7 @@ void buble_sort_rec2(int a[],int n,int j){
      if(a[j]>a[j+1]){
          swap(a[j],a[j+1]);
      }
-    buble_sort_rec2(a,n-1,j+1);
+    buble_sort_rec2(a,n,j+1);
 }
 
 int main(){
