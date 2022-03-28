@@ -7,8 +7,6 @@ class Node{
     int getData(){
         return data;
     } 
-
-    friend class List;
 };
 class List{
     Node* head;
@@ -42,5 +40,21 @@ class List{
            tail->next = n;
            tail = n;
        }
+    }
+
+    // Insert data in linked list on given position
+    void insert(int data,int pos){
+        if(pos==0){
+            push_front(data);
+            return;
+        }
+        //otherwise
+        Node * temp = head;
+        for(int jump =1;jump<=pos-1;jump++){
+            temp =temp->next;
+        }
+        Node* n = new Node(data);
+        n->next = temp->next;
+        temp->next = n;
     }
 };
