@@ -11,8 +11,6 @@ class ListNode {
     }
 };
 
-
-
 void insertion_at_Tail(ListNode*& head, int data) {
     if (head == NULL) {
         ListNode* node = new ListNode(data);
